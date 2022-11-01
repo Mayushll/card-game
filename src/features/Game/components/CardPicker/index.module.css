@@ -1,0 +1,19 @@
+.list{
+    position: relative;
+
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15,15,15,0.7);
+
+    padding: 15px 0;
+}
+
+.item{
+    position: relative;
+    margin: 10px;
+    width: 100px;
+}
