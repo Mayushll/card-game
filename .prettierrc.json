@@ -1,0 +1,28 @@
+{
+  "tabWidth": 4,
+  "printWidth": 500,
+  "semi": false,
+  "proseWrap": "preserve",
+  "bracketSameLine": false,
+  "importOrder": [
+    "^react/(.*)$",
+    "^react-redux/(.*)$",
+    "^helpers/(.*)$",
+    "^utils/(.*)$",
+    "^_shared/(.*)$",
+    "^components/(.*)$",
+    "^services/(.*)$",
+    "^entities/(.*)$",
+    "^features/(.*)$",
+    "^widgets/(.*)$",
+    "^pages/(.*)$",
+    "^store/(.*)$",
+    "^app/(.*)$",
+    "^../(.*)$",
+    "^[./](.*)",
+    "^[.](.*)",
+    "^[.](.*)"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}

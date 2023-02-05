@@ -2,35 +2,74 @@
   "name": "anime",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mayushll.github.io/card-game",
   "dependencies": {
+    "@principalstudio/html-webpack-inject-preload": "^1.2.7",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tippyjs/react": "^4.2.6",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.68",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@types/react-transition-group": "^4.4.5",
+    "@types/styled-components": "^5.1.26",
+    "@types/tailwindcss": "^3.1.0",
+    "dependency-cruiser": "^12.9.0",
+    "directory-import": "^2.3.1",
+    "gh-pages": "^5.0.0",
+    "global": "^4.4.0",
+    "i": "^0.3.7",
+    "lodash": "^4.17.21",
+    "marge": "^1.0.1",
+    "npm": "^9.1.2",
+    "preload-webpack-plugin": "^2.3.0",
+    "prettier": "^2.8.1",
+    "rc-slider": "^10.1.0",
+    "rc-tooltip": "^5.3.1",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dnd-touch-backend": "^16.0.1",
     "react-dom": "^18.2.0",
+    "react-preload-media": "^0.1.2",
     "react-redux": "^8.0.4",
     "react-scripts": "5.0.1",
+    "react-tippy": "^1.4.0",
+    "react-tooltip": "^5.7.0",
+    "react-transition-group": "^4.4.5",
+    "serve": "^14.1.2",
+    "styled-components": "^5.3.6",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -46,8 +85,24 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/node-logger": "^6.5.16",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "@types/lodash": "^4.14.187",
+    "@vue/preload-webpack-plugin": "^2.0.0",
     "autoprefixer": "^10.4.13",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1"
+    "prop-types": "^15.8.1",
+    "webpack": "^5.75.0"
   }
 }
