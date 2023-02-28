@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/card-game/static/css/main.d95f7247.css",
-    "main.js": "/card-game/static/js/main.a9ef4615.js",
+    "main.css": "/card-game/static/css/main.1ac8ce8e.css",
+    "main.js": "/card-game/static/js/main.83e91700.js",
     "static/media/1.mp3": "/card-game/static/media/1.20f6f85589c7d4b35a1c.mp3",
-    "static/media/background.png": "/card-game/static/media/background.285775e63c753bff5f28.png",
     "static/media/review-back.webp": "/card-game/static/media/review-back.d429127e63a0778df920.webp",
     "static/media/preview-picture.webp": "/card-game/static/media/preview-picture.6cfd298d0e6857a97865.webp",
     "static/media/picture.webp": "/card-game/static/media/picture.66edc3098da4c71b0f46.webp",
@@ -15,6 +14,8 @@
     "static/media/death1.mp3": "/card-game/static/media/death1.d240199eaa9207959cd1.mp3",
     "static/media/ultimate2.mp3": "/card-game/static/media/ultimate2.49ef6d0fc85cda55837d.mp3",
     "static/media/ultimate1.mp3": "/card-game/static/media/ultimate1.12ca5d44b024c6e42c4d.mp3",
+    "static/media/background.webp": "/card-game/static/media/background.fd11eb057cd2305b1b13.webp",
+    "static/media/icon.webp": "/card-game/static/media/icon.2df9c816f3f83a5f9932.webp",
     "static/media/summon1.mp3": "/card-game/static/media/summon1.977c9d065d6f97911b2d.mp3",
     "static/media/preview.mp3": "/card-game/static/media/preview.91cb606ed7d3a946501d.mp3",
     "static/media/summon2.mp3": "/card-game/static/media/summon2.92646b4ddeb8aefe6b51.mp3",
@@ -43,13 +44,12 @@
     "index.html": "/card-game/index.html",
     "static/media/3.mp3": "/card-game/static/media/3.2e0e1ba754b44cf52240.mp3",
     "static/media/4.mp3": "/card-game/static/media/4.5fb019d9a313e8780cb9.mp3",
-    "static/media/icon.webp": "/card-game/static/media/icon.2df9c816f3f83a5f9932.webp",
     "static/media/settings.webp": "/card-game/static/media/settings.e881ecacf148b05ebf96.webp",
-    "main.d95f7247.css.map": "/card-game/static/css/main.d95f7247.css.map",
-    "main.a9ef4615.js.map": "/card-game/static/js/main.a9ef4615.js.map"
+    "main.1ac8ce8e.css.map": "/card-game/static/css/main.1ac8ce8e.css.map",
+    "main.83e91700.js.map": "/card-game/static/js/main.83e91700.js.map"
   },
   "entrypoints": [
-    "static/css/main.d95f7247.css",
-    "static/js/main.a9ef4615.js"
+    "static/css/main.1ac8ce8e.css",
+    "static/js/main.83e91700.js"
   ]
 }
