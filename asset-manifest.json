@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/card-game/static/css/main.1ac8ce8e.css",
-    "main.js": "/card-game/static/js/main.17f6ee16.js",
+    "main.js": "/card-game/static/js/main.993b8b8d.js",
     "static/media/1.mp3": "/card-game/static/media/1.20f6f85589c7d4b35a1c.mp3",
     "static/media/review-back.webp": "/card-game/static/media/review-back.d429127e63a0778df920.webp",
     "static/media/preview-picture.webp": "/card-game/static/media/preview-picture.6cfd298d0e6857a97865.webp",
@@ -46,10 +46,10 @@
     "static/media/4.mp3": "/card-game/static/media/4.5fb019d9a313e8780cb9.mp3",
     "static/media/settings.webp": "/card-game/static/media/settings.e881ecacf148b05ebf96.webp",
     "main.1ac8ce8e.css.map": "/card-game/static/css/main.1ac8ce8e.css.map",
-    "main.17f6ee16.js.map": "/card-game/static/js/main.17f6ee16.js.map"
+    "main.993b8b8d.js.map": "/card-game/static/js/main.993b8b8d.js.map"
   },
   "entrypoints": [
     "static/css/main.1ac8ce8e.css",
-    "static/js/main.17f6ee16.js"
+    "static/js/main.993b8b8d.js"
   ]
 }
