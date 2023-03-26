@@ -15,7 +15,9 @@ export const Square = ({ square }: Props) => {
     useBuffs(square)
     useIncome(square)
     const { dragRef } = useDragSquare(square)
-
+    if (square.card) {
+        console.log("render square", square.card)
+    }
     const [canDrop, , dropRef] = useCardDrop(square)
     return (
         <SWrapper ref={dropRef as any} canDrop={canDrop} color={square.card?.player_color} background={square.type}>

@@ -1,4 +1,4 @@
-import { Tracks } from "entities/AudioPlayer/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer/AudioPlayer"
 import { setUltimateScreen } from "entities/Ultimate/state/state"
 import { AppDispatch } from "app/store"
 

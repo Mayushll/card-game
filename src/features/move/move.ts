@@ -1,6 +1,6 @@
 import { cloneDeep } from "lodash"
 import { getRandomInt } from "utils/getRandomInt"
-import { Tracks } from "entities/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer"
 import { TSquare, setSquare } from "entities/Square"
 import { AppDispatch } from "app/store"
 

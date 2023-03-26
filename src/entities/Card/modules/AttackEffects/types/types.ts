@@ -11,5 +11,5 @@ export type TAttackEffectsList = keyof TAttackEffects
 
 export type EffectsProps = {
     card: TCardInBattle
-    value?: number
+    value: number
 }

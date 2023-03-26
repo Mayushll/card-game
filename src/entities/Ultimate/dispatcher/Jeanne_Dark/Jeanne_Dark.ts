@@ -1,4 +1,4 @@
-import { Tracks } from "entities/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer"
 import { addBuffToBoard } from "entities/Square"
 import { setUltimateScreen } from "entities/Ultimate/state/state"
 import { AppDispatch } from "app/store"

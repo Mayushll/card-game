@@ -10,9 +10,5 @@ interface Props {
 }
 
 export const CardsManual = ({ setItem, item }: Props) => {
-    return (
-        <ManualWrapper>
-            <SelectingTable rows={3} columns={3} cards={allCardsData} onClick={setItem} selectedItem={item} />
-        </ManualWrapper>
-    )
+    return <ManualWrapper></ManualWrapper>
 }

@@ -3,5 +3,6 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$USER_HOME$/Desktop/Новый текстовый документ.js" libraries="{@types/prettier, anime/node_modules}" />
     <file url="file://$PROJECT_DIR$" libraries="{anime/node_modules}" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

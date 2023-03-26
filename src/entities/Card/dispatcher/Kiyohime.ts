@@ -1,5 +1,5 @@
 import { getRandomInt } from "utils/getRandomInt"
-import { Tracks } from "entities/AudioPlayer/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer/AudioPlayer"
 import { Character, countDefaultVoicesDecorator } from "entities/Card/helpers/helpers"
 import { TAttackProps, TCard, TCardInBattle } from "entities/Card/types/types"
 

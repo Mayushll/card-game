@@ -1,5 +1,5 @@
-import { setPage } from "widgets/StartMenu/state/state"
 import { TPage } from "widgets/StartMenu/types/types"
+import { setPage } from "pages/Profile"
 import { useTDispatch } from "app/store"
 
 export function usePage() {

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { CSSTransition } from "react-transition-group"
-import { useMusicSettings } from "entities/AudioPlayer/hooks/useMusicSettings"
+import { useMusicSettings } from "_shared/AudioPlayer/hooks/useMusicSettings"
 import { SSettingsIcon, SWrapper } from "widgets/Settings/components/Settings/Settings.style"
 import { SettingsBody } from "widgets/Settings/components/Settings/SettingsBody/SettingsBody"
 

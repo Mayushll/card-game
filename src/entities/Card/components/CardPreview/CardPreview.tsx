@@ -1,3 +1,4 @@
+import { L10n } from "_shared/locale/locale"
 import { TCardInfo, selectPreview, useChangePreview } from "entities/Card"
 import { useTSelector } from "app/store"
 import { SIcon, SInfo, SInfoWrapper, SName, SOutline, SPicture, SWrapper } from "./CardPreview.styles"
@@ -19,7 +20,7 @@ export const CardPreview = () => {
                 <SInfoWrapper>
                     <SName>
                         <SIcon src={iconSrc} alt={"icon"} />
-                        <div>{card.publicName}</div>
+                        <div>{L10n.Cards[card.name]}</div>
                     </SName>
                     <SInfo>
                         <p>HP: {card.max_hp}</p>

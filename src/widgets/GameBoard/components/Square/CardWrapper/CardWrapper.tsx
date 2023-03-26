@@ -12,7 +12,6 @@ interface Props {
     children: ReactNode
     card: TCardInBattle
 }
-
 export const CardWrapper = ({ children, card }: Props) => {
     const dispatch = useTDispatch()
     const player = useTSelector(selectPlayer(card.player_id))!
@@ -22,7 +21,7 @@ export const CardWrapper = ({ children, card }: Props) => {
         }
     }
     return (
-        <SWrapper onClick={() => onClickHandler(card)} style={{ position: "relative" }}>
+        <SWrapper onClick={() => onClickHandler(card)}>
             <CSSTransition classNames={"shield"} in={card.shield} timeout={500} unmountOnExit mountOnEnter>
                 <SShield />
             </CSSTransition>

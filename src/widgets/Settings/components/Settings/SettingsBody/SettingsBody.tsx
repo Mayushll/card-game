@@ -1,5 +1,5 @@
+import { VolumeSettings } from "_shared/AudioPlayer/components/VolumeSettings/VolumeSettings"
 import { Checkbox } from "_shared/components/Checkbox/Checkbox"
-import { VolumeSettings } from "entities/AudioPlayer/components/VolumeSettings/VolumeSettings"
 import { selectArrowMode, switchArrowMode } from "widgets/Settings/state/state"
 import { useTDispatch, useTSelector } from "app/store"
 import { SOutline, SWrapper } from "../SettingsBody/SettingsBody.style"

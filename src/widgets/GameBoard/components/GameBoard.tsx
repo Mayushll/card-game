@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import { TPlayer, selectPlayers } from "entities/Players"
 import { UltimateSlide } from "entities/Ultimate"
+import { Ultimate } from "entities/Ultimate/components/Ultimate/Ultimate"
 import { DrawArrowLayout } from "widgets/GameBoard/components/DrawArrowLayout"
 import { GameField } from "widgets/GameBoard/components/GameField"
 import { SwitchTurnButton } from "widgets/GameBoard/components/SwitchTurnButton/SwitchTurnButton"
@@ -17,7 +18,7 @@ export function GameBoard() {
         <SWrapper ref={wrapper}>
             {isArrowModeOn && <DrawArrowLayout wrapper={wrapper} />}
             {players.map((player: TPlayer) => (
-                <UltimateSlide id={player.player_id} key={player.player_id} />
+                <Ultimate id={player.player_id} key={player.player_id} />
             ))}
             {<SwitchTurnButton />}
 

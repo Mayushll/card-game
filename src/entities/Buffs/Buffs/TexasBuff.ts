@@ -7,7 +7,7 @@ export function TexasBuff() {
         return { ...card, bonus_damage: bonusDamage }
     }
     function remove(card: TCardInBattle): TCardInBattle {
-        return { ...card, bonus_damage: card.bonus_damage - card.base_dmg * buffConsts.Texas }
+        return { ...card, bonus_damage: card.bonus_damage - Math.round(card.base_dmg * buffConsts.Texas) }
     }
     return { add, remove }
 }

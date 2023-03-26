@@ -1,4 +1,4 @@
-import { Tracks } from "entities/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer"
 
 export function startGame() {
     Tracks.BackgroundMusic.changeAudio(`assets/background-music/board/1`)

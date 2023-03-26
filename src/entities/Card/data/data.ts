@@ -10,8 +10,6 @@ export const allCardsData: TCardInfo[] = [
         abilities: ["first_slash"],
         fraction: null,
         price: 5,
-
-        publicName: "Kiyohime", //fixme вынести в локу это свойство
     },
     {
         name: "Artoria",
@@ -19,11 +17,9 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 80,
         base_dmg: 18,
         base_range: 1,
-        abilities: ["first_slash"],
+        abilities: ["first_shield"],
         fraction: null,
         price: 7,
-
-        publicName: "Artoria Saber",
     },
     {
         name: "Nero",
@@ -31,11 +27,9 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 90,
         base_dmg: 15,
         base_range: 1,
-        abilities: [],
+        abilities: ["first_slash"],
         fraction: null,
         price: 7,
-
-        publicName: "Nero Claudius",
     },
     {
         name: "DAN",
@@ -43,11 +37,9 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 80,
         base_dmg: 25,
         base_range: 1,
-        abilities: ["vampirism"],
+        abilities: ["vampirism", "first_slash"],
         fraction: null,
         price: 5,
-
-        publicName: "Dead Apostle Noel",
     },
     {
         name: "Jeanne_Dark",
@@ -55,11 +47,9 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 70,
         base_dmg: 10,
         base_range: 1,
-        abilities: [],
+        abilities: ["first_slash"],
         fraction: null,
         price: 5,
-
-        publicName: "Jeanne Dark",
     },
     {
         name: "Texas",
@@ -67,11 +57,9 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 50,
         base_dmg: 10,
         base_range: 1,
-        abilities: [],
+        abilities: ["first_slash"],
         fraction: null,
         price: 5,
-
-        publicName: "Texas",
     },
     {
         name: "Fubuki",
@@ -79,11 +67,9 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 45,
         base_dmg: 20,
         base_range: 2,
-        abilities: [],
+        abilities: ["first_slash"],
         fraction: "Hololive",
         price: 5,
-
-        publicName: "Shirakami Fubuki",
     },
     {
         name: "Matsuri",
@@ -91,13 +77,15 @@ export const allCardsData: TCardInfo[] = [
         max_hp: 50,
         base_dmg: 15,
         base_range: 2,
-        abilities: [],
+        abilities: ["first_slash"],
         fraction: "Hololive",
         price: 5,
-
-        publicName: "Natsuiro Matsuri",
     },
 ]
+export const cardNames: TNames[] = allCardsData.map((item) => {
+    return item.name
+})
+
 export function getCardInfo(name: TNames) {
-    return allCardsData.find((card: TCardInfo) => card.name === name)
+    return allCardsData.find((card: TCardInfo) => card.name === name) || allCardsData[0]
 }

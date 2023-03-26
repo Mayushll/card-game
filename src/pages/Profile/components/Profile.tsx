@@ -1,9 +1,9 @@
 import React from "react"
-import { CSSTransition, SwitchTransition, TransitionGroup } from "react-transition-group"
+import { CSSTransition, SwitchTransition } from "react-transition-group"
+import { CardPoolConfig } from "widgets/CardPoolConfig/components/CardPoolConfig"
+import { Manual } from "widgets/Manual/components/Manual"
 import { StartMenu } from "widgets/StartMenu"
-import { CardPoolConfig } from "widgets/StartMenu/components/CardPoolConfig/CardPoolConfig"
-import { Manual } from "widgets/StartMenu/components/Manual/Manual"
-import { selectPage } from "widgets/StartMenu/state/state"
+import { selectPage } from "pages/Profile/state/state"
 import { useTSelector } from "app/store"
 import { SAnimation } from "./Profile.style"
 

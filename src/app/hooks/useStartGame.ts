@@ -1,8 +1,9 @@
 import { RefObject, useEffect, useState } from "react"
-import { Tracks } from "entities/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer"
 import { prepareCards } from "entities/Players"
 import { startGame } from "features/startGame/startGame"
-import { selectChosenCardPool, setPage } from "widgets/StartMenu/state/state"
+import { selectChosenCardPool } from "widgets/CardPoolConfig/state/state"
+import { setPage } from "pages/Profile"
 import { useTDispatch, useTSelector } from "app/store"
 
 export function useStartGame(app: RefObject<HTMLDivElement>) {

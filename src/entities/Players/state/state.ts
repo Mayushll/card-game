@@ -1,8 +1,8 @@
 import { Draft, PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { TCardInBattle, TCardInHand, TCardInProfile } from "entities/Card"
 import { Players, TPlayerIdType, createCardPools } from "entities/Players"
+import { TFraction, TFractionNames, TPlayer } from "entities/Players"
 import { TBuffPayload } from "entities/Players/state/state.types"
-import { TFraction, TFractionNames, TPlayer } from "entities/Players/types/types"
 import { RootState } from "app/store"
 
 interface CardsState {

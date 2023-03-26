@@ -1,4 +1,6 @@
-import { TFightAbilitiesKeys } from "entities/Card/modules/FightAbilities/types/types"
+import { TFightAbilities, TFightAbilitiesKeys } from "entities/Card/modules/Abilities/FightAbilities/types/types"
+import { TSummonAbilitiesList } from "entities/Card/modules/Abilities/SummonAbilities"
+import { TAnyAbilitiesKeys } from "entities/Card/modules/Abilities/types"
 import { TFractionNames } from "entities/Players"
 import { AppDispatch } from "app/store"
 
@@ -30,11 +32,9 @@ export type TCardInfo = {
     max_hp: number
     base_dmg: number
     base_range: number
-    abilities: TFightAbilitiesKeys[]
+    abilities: TAnyAbilitiesKeys[]
     fraction: TFractionNames | null
     price: number
-
-    publicName: string
 }
 
 export type TCardInProfile = TCardInfo & TCardIsSelected

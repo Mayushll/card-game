@@ -1,4 +1,4 @@
-import { Tracks } from "entities/AudioPlayer/AudioPlayer"
+import { Tracks } from "_shared/AudioPlayer/AudioPlayer"
 import { Character } from "entities/Card/helpers/helpers"
 import { TCard } from "entities/Card/types/types"
 

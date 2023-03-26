@@ -1,1 +1,1 @@
-export * from "./components/StartMenu/StartMenu"
+export * from "./components/StartMenu"

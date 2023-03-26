@@ -43,7 +43,6 @@ body{
 *::before,
 *::after {
   box-sizing: border-box;
-  font-size: 1vw;
   color: hsl(var(--white))
 }
 

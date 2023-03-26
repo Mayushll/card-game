@@ -1,13 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { useDispatch, useSelector } from "react-redux"
 import type { TypedUseSelectorHook } from "react-redux"
-import { VolumeSlice } from "entities/AudioPlayer/state/state"
+import { VolumeSlice } from "_shared/AudioPlayer/state/state"
 import { PreviewSlice } from "entities/Card"
 import { PlayersSlice } from "entities/Players"
 import { SquaresSlice } from "entities/Square"
 import { UltimateSlice } from "entities/Ultimate"
+import { CardPoolSlice } from "widgets/CardPoolConfig/state/state"
 import { SettingsSlice } from "widgets/Settings"
-import { ProfileSlice } from "widgets/StartMenu/state/state"
+import { ProfileSlice } from "pages/Profile/state/state"
 
 const baseReducers = {
     players: PlayersSlice,
@@ -15,6 +16,7 @@ const baseReducers = {
     ultimate: UltimateSlice,
     preview: PreviewSlice,
     profile: ProfileSlice,
+    cardPool: CardPoolSlice,
 }
 
 const settingsReducers = {
