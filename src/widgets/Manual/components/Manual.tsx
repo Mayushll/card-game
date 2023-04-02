@@ -3,12 +3,15 @@ import { TNames } from "entities/Card"
 import { ManualCharacters } from "widgets/Manual/components/ManualContent/Characters/ManualCharacters"
 import { ManualHeader } from "widgets/Manual/components/ManualHeader/ManualHeader"
 import { TManual } from "widgets/Manual/types/types"
+import { SQuitButton } from "pages/Board/components/GameWrapper/QuitButton/QuitButton.style"
+import { setPage } from "pages/Profile"
+import { useTDispatch } from "app/store"
 import { SWrapper } from "./Manual.style"
 
 export const PagesList = ["buffs", "characters"] as const
 export const Manual = () => {
     const [manual, setManual] = useState<TManual>({ page: "characters", item: "Kiyohime" })
-
+    const dispatch = useTDispatch()
     const pageIndex = useMemo(() => {
         return PagesList.indexOf(manual.page)
     }, [manual])
@@ -36,6 +39,7 @@ export const Manual = () => {
         <SWrapper>
             <ManualHeader changePage={changePage} manual={manual} pageIndex={pageIndex} />
             <ManualCharacters changeItem={changeItem} manual={manual} />
+            <SQuitButton onClick={() => dispatch(setPage("start"))}>В профиль</SQuitButton>
         </SWrapper>
     )
 }

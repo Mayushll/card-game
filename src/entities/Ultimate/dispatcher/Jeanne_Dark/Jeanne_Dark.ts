@@ -1,6 +1,6 @@
 import { Tracks } from "_shared/AudioPlayer"
 import { addBuffToBoard } from "entities/Square"
-import { setUltimateScreen } from "entities/Ultimate/state/state"
+import { setUltimateScreen } from "entities/Ultimate/modules/state/state"
 import { AppDispatch } from "app/store"
 
 export function Jeanne_Dark_Ultimate({ player_id, visible, name }: any, dispatch: AppDispatch) {

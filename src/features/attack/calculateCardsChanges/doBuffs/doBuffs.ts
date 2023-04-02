@@ -21,5 +21,6 @@ export function doBuffs({ target, attacker }: Props) {
             newAttacker = result.newAttacker
         }
     })
+
     return { buffedTarget: newTarget, buffedAttacker: newAttacker }
 }

@@ -15,6 +15,7 @@ export const slice = createSlice({
     initialState,
     reducers: {
         setPage: (state: Draft<ProfileState>, action: PayloadAction<TPage>) => {
+            console.log("123")
             state.page = action.payload
         },
     },

@@ -1,5 +1,5 @@
 import { Tracks } from "_shared/AudioPlayer/AudioPlayer"
-import { setUltimateScreen } from "entities/Ultimate/state/state"
+import { setUltimateScreen } from "entities/Ultimate/modules/state/state"
 import { AppDispatch } from "app/store"
 
 export function Nero_Ultimate({ player_id, visible, name }: any, dispatch: AppDispatch) {

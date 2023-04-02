@@ -1,5 +1,5 @@
 import { CSSTransition } from "react-transition-group"
-import { useUltimateAnimation } from "entities/Ultimate/hooks/useUltimateAnimation"
+import { useUltimateAnimation } from "entities/Ultimate/modules/hooks/useUltimateAnimation"
 import { SImage } from "./UltimateSlide.style"
 
 interface Props {

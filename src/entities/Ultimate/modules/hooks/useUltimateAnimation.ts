@@ -1,11 +1,12 @@
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { TUltimate, setUltimateScreen } from "entities/Ultimate/state/state"
+import { setUltimateScreen } from "entities/Ultimate/modules/state/state"
+import { TUltimateSlide } from "entities/Ultimate/modules/types/types"
 import { useTSelector } from "app/store"
 
 export const useUltimateAnimation = (id: number) => {
     const dispatch = useDispatch()
-    const ultimate = useTSelector((state) => state.ultimate.ultimates).find((ultimate: TUltimate) => ultimate.player_id === id)
+    const ultimate = useTSelector((state) => state.ultimate.ultimates).find((ultimate: TUltimateSlide) => ultimate.player_id === id)
     let pictureSrc = null
     if (ultimate?.name) {
         pictureSrc = require(`assets/characters/${ultimate?.name}/ultimate-picture.webp`)

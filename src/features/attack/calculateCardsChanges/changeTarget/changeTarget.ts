@@ -7,11 +7,6 @@ interface TAfterAttack {
 }
 
 export function changeTarget({ target, attacker }: TAfterAttack) {
-    if (target.shield) {
-        target = destroyShield(target)
-        return target
-    }
-
     const hitpoints: number = calculateDamage(target, attacker) || 0
     target = doDefaultAttack(target, hitpoints)
 
@@ -20,8 +15,4 @@ export function changeTarget({ target, attacker }: TAfterAttack) {
 
 function doDefaultAttack(target: TCardInBattle, hitpoints: number) {
     return { ...target, current_hp: hitpoints }
-}
-
-function destroyShield(target: TCardInBattle) {
-    return { ...target, shield: false }
 }

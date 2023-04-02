@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux"
 import { TPlayerIdType } from "entities/Players"
 import { createUltimate } from "entities/Ultimate/dispatcher/dispatcher"
-import { useUltimateAnimation } from "entities/Ultimate/hooks/useUltimateAnimation"
-import { selectUltimate } from "entities/Ultimate/state/state"
+import { selectUltimate } from "entities/Ultimate/modules/state/state"
 
 interface Props {
     id: TPlayerIdType

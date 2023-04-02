@@ -9,6 +9,10 @@ interface Props {
 }
 
 export function calculateCardsChanges({ target, attacker }: Props) {
+    if (target.shield) {
+        return { newTarget: destroyShield(target), newAttacker: attacker }
+    }
+
     let newTarget = changeTarget({ target, attacker })
     let newAttacker = changeAttacker(attacker)
 
@@ -18,4 +22,8 @@ export function calculateCardsChanges({ target, attacker }: Props) {
     })
 
     return { newTarget: buffedTarget, newAttacker: buffedAttacker }
+}
+
+function destroyShield(target: TCardInBattle) {
+    return { ...target, shield: false }
 }

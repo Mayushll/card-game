@@ -1,16 +1,10 @@
 import { Draft, PayloadAction, createSlice } from "@reduxjs/toolkit"
-import { TNames } from "entities/Card"
-import { TPlayer, TPlayerIdType } from "entities/Players"
+import { TPlayerIdType } from "entities/Players"
+import { TUltimateSlide } from "entities/Ultimate/modules/types/types"
 import { RootState } from "app/store"
 
-export type TUltimate = {
-    name?: TNames | null
-    player_id?: TPlayerIdType | null
-    visible: boolean
-}
-
 interface UltimateState {
-    ultimates: TUltimate[]
+    ultimates: TUltimateSlide[]
 }
 
 const initialState: UltimateState = {
@@ -32,7 +26,7 @@ export const slice = createSlice({
     name: "ultimate",
     initialState,
     reducers: {
-        setUltimateScreen: (state: Draft<UltimateState>, action: PayloadAction<TUltimate>) => {
+        setUltimateScreen: (state: Draft<UltimateState>, action: PayloadAction<TUltimateSlide>) => {
             let ultimate = state.ultimates.find((ultimate) => ultimate.player_id === action.payload.player_id)
             if (ultimate) {
                 if (action.payload.name !== undefined) {
