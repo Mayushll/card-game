@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/card-game/static/css/main.1ac8ce8e.css",
-    "main.js": "/card-game/static/js/main.993b8b8d.js",
+    "main.css": "/card-game/static/css/main.b6c65cd4.css",
+    "main.js": "/card-game/static/js/main.f9b835fd.js",
     "static/media/1.mp3": "/card-game/static/media/1.20f6f85589c7d4b35a1c.mp3",
     "static/media/review-back.webp": "/card-game/static/media/review-back.d429127e63a0778df920.webp",
     "static/media/preview-picture.webp": "/card-game/static/media/preview-picture.6cfd298d0e6857a97865.webp",
@@ -22,6 +22,7 @@
     "static/media/summon.mp3": "/card-game/static/media/summon.89d846afac4a3f8e4a0d.mp3",
     "static/media/start.mp3": "/card-game/static/media/start.1534a493610d71c199f8.mp3",
     "static/media/first_attack.mp3": "/card-game/static/media/first_attack.387debad448e4e3798ad.mp3",
+    "static/media/Hololive — копия.webp": "/card-game/static/media/Hololive — копия.c58a9760d69d82cf307a.webp",
     "static/media/Hololive.webp": "/card-game/static/media/Hololive.c58a9760d69d82cf307a.webp",
     "static/media/без названия.mp3": "/card-game/static/media/без названия.ca01cf42f627c9f8f080.mp3",
     "static/media/death.mp3": "/card-game/static/media/death.074835d981ed44df8a6e.mp3",
@@ -45,11 +46,11 @@
     "static/media/3.mp3": "/card-game/static/media/3.2e0e1ba754b44cf52240.mp3",
     "static/media/4.mp3": "/card-game/static/media/4.5fb019d9a313e8780cb9.mp3",
     "static/media/settings.webp": "/card-game/static/media/settings.e881ecacf148b05ebf96.webp",
-    "main.1ac8ce8e.css.map": "/card-game/static/css/main.1ac8ce8e.css.map",
-    "main.993b8b8d.js.map": "/card-game/static/js/main.993b8b8d.js.map"
+    "main.b6c65cd4.css.map": "/card-game/static/css/main.b6c65cd4.css.map",
+    "main.f9b835fd.js.map": "/card-game/static/js/main.f9b835fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ac8ce8e.css",
-    "static/js/main.993b8b8d.js"
+    "static/css/main.b6c65cd4.css",
+    "static/js/main.f9b835fd.js"
   ]
 }
