@@ -16,7 +16,8 @@ export const S3D = styled.div`
 `
 const sharedStyle = css`
     font-size: 1vw;
-    color: ghostwhite;
+    padding: 5px;
+    cursor: pointer;
     user-select: none;
     width: 12vw;
     border-radius: 15px;
@@ -27,17 +28,13 @@ const sharedStyle = css`
 `
 export const SBack = styled.button<Props>`
     ${sharedStyle};
-    cursor: pointer;
     color: hsl(var(--white));
     background-color: hsl(var(--darkGray));
-    padding: 5px;
     transform: ${(props) => (props.activePlayer === 1 ? "rotateX(180deg)" : "rotateX(0deg)")};
 `
 export const SFront = styled.button<Props>`
     ${sharedStyle};
     color: hsl(var(--darkGray));
-    cursor: pointer;
     background-color: hsl(var(--white));
-    padding: 5px;
     transform: ${(props) => (props.activePlayer === 1 ? "rotateX(0deg)" : "rotateX(-180deg)")};
 `

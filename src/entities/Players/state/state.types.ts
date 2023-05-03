@@ -1,4 +1,4 @@
-import { TBuffsMembers } from "entities/Buffs"
+import { TBuffsMembers } from "entities/Card"
 
 export interface TPlayerPayload {
     player_id: number

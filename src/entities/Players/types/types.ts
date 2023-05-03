@@ -1,4 +1,4 @@
-import { TBuffsMembers } from "entities/Buffs"
+import { TBuffsMembers } from "entities/Card"
 import { TCardInBattle, TCardInHand } from "entities/Card"
 
 export type TFractionNames = "Hololive"

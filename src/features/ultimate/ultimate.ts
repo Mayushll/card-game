@@ -1,5 +1,5 @@
-import { createUltimate } from "entities/Ultimate"
-import { TUltimateSlide } from "entities/Ultimate"
+import { createUltimate } from "features/ultimate//dispatcher/dispatcher"
+import { TUltimateSlide } from "features/ultimate//modules/types/types"
 import { AppDispatch } from "app/store"
 
 export const ultimate =

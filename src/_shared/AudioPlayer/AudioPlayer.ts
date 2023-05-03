@@ -1,5 +1,3 @@
-import { a } from "_shared/types/types"
-
 class AudioPlayer {
     //fixme выглядит как кал
     private audio: HTMLAudioElement = new Audio()

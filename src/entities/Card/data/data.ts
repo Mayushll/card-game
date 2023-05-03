@@ -13,12 +13,12 @@ export const allCardsData: TCardInfo[] = [
     },
     {
         name: "Artoria",
-        hero_class: "saber",
-        max_hp: 80,
-        base_dmg: 18,
-        base_range: 1,
-        abilities: ["first_shield"],
-        fraction: null,
+        hero_class: "lancer",
+        max_hp: 5,
+        base_dmg: 0,
+        base_range: 2,
+        abilities: ["first_slash", "vampirism"],
+        fraction: "Hololive",
         price: 7,
     },
     {

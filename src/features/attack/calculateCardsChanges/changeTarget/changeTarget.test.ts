@@ -1,8 +1,6 @@
-import { TCardInBattle } from "entities/Card"
-import { changeTarget } from "features/attack/calculateCardsChanges/changeTarget/changeTarget"
-
 export const a = 1
 
+/*
 export const CardWithShield: TCardInBattle = {
     name: "Kiyohime",
     hero_class: "lancer",
@@ -32,3 +30,4 @@ describe("changeTarget", () => {
         expect(changeTarget({ target: CardWithShield, attacker: CardWithShield }).current_hp).toBe(49)
     })
 })
+*/

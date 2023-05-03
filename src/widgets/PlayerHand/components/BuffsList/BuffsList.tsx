@@ -1,6 +1,6 @@
 import Tippy from "@tippyjs/react"
 import { L10n } from "_shared/locale/locale"
-import { TBuffsMembers } from "entities/Buffs"
+import { TBuffsMembers } from "entities/Card"
 import { TPlayer } from "entities/Players"
 import { BuffIcon, Wrapper } from "./BuffsList.style"
 

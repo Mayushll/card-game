@@ -1,6 +1,6 @@
 import { isEqual } from "lodash"
 import { useEffect, useRef } from "react"
-import { addBuff, removeBuff } from "entities/Buffs"
+import { addBuff, removeBuff } from "entities/Card"
 import { TCardInBattle } from "entities/Card"
 import { TPlayer, selectPlayer } from "entities/Players"
 import { TSquare, setSquare } from "entities/Square"

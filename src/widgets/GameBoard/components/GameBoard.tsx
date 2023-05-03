@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import { TPlayer, selectPlayers } from "entities/Players"
-import { Ultimate } from "entities/Ultimate/components/Ultimate/Ultimate"
+import { Ultimate } from "features/ultimate//components/Ultimate/Ultimate"
 import { DrawArrowLayout } from "widgets/GameBoard/components/DrawArrowLayout"
 import { GameField } from "widgets/GameBoard/components/GameField"
 import { SwitchTurnButton } from "widgets/GameBoard/components/SwitchTurnButton/SwitchTurnButton"

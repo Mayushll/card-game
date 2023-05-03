@@ -11,6 +11,7 @@ interface Props {
 
 export const Move = ({ target, attacker }: Props, dispatch: AppDispatch) => {
     let card = cloneDeep(attacker.card)!
+
     Tracks.Moves.changeAudio(`assets/move/${getRandomInt(1, 4)}`)
     card.movePoints = card.movePoints - 1
     dispatch(setSquare({ x: target.x, y: target.y, card: card }))

@@ -31,7 +31,6 @@ export function useMusicSettings() {
         Tracks.Ultimate[1].changeVolume(sounds * general)
         Tracks.Ultimate[2].changeVolume(sounds * general)
         ExtraTracks.Sounds.forEach((track: any) => {
-            // @ts-ignore
             track.changeVolume(sounds * general)
         })
     }, [sounds, general])
